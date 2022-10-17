@@ -1,6 +1,7 @@
 import socket
 s = socket.socket()
 portas = [80,443,1194,53,22,21]
+print ("Scanner de portas v0.01")
 ip = input("Digite o ip do alvo: ")
 for p in portas:
     if(s.connect_ex((ip,p)) == 0):
